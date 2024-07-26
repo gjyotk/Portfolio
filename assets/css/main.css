@@ -11,7 +11,7 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+section, summary, time, mark, audio, video, .resume {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -25,6 +25,15 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+}
+
+.image {
+	border-radius: 8px;
+	border: 1;
+	display: inline-block;
+	/* position: relative; */
+	height: 20%;
+	width: 20%;
 }
 
 ol, ul {
@@ -89,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #1b1f22;
+		background: #111111;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -104,6 +113,9 @@ input, select, textarea {
 		}
 
 /* Type */
+
+
+
 
 	html {
 		font-size: 16pt;
@@ -1153,7 +1165,7 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 			/* background-image: url("../../images/istockphoto-883622612-612x612.jpg"); */
-			background-color: #212121;
+			background-color: #2a2a2a;
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1314,7 +1326,7 @@ input, select, textarea {
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
-				padding: 5rem 3rem;
+				padding: 3rem 2rem;
 				max-height: 60rem;
 				overflow: hidden;
 			}
