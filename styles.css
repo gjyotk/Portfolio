@@ -36,7 +36,7 @@ a {
     text-decoration: none;
     color: var(--primary-color);
     transition: var(--transition);
-    font-size: 1.1rem; 
+    font-size: 1.3rem; 
 }
 
 a:hover {
@@ -97,7 +97,7 @@ img {
 
 p {
     margin-bottom: 20px;
-    font-size: 1.1rem; 
+    font-size: 1.3rem; 
 }
 
 .btn {
@@ -229,7 +229,8 @@ header .container {
 
 .hero-content {
     flex: 1;
-    padding-right: 60px;        
+    padding-right: 60px;   
+    margin-left: 80px;     
 }
 
 .hero-image {
@@ -391,7 +392,7 @@ header .container {
     position: relative;
     padding-left: 20px;           
     list-style-type: none;
-    font-size: 1.1rem;     
+    font-size: 1.3rem;     
 }
 
 .experience-item li::before {
@@ -399,7 +400,7 @@ header .container {
     color: var(--primary-color);
     position: absolute;
     left: 0;
-    font-size: 1.2rem; 
+    font-size: 1.3rem; 
 }
 
 /* Skills styles */
@@ -429,7 +430,7 @@ header .container {
     margin-bottom: 12px;       
     position: relative;
     padding-left: 20px;           
-    font-size: 1.1rem;     
+    font-size: 1.25rem;     
 }
 
 .skill-category li::before {
@@ -437,7 +438,7 @@ header .container {
     color: var(--primary-color);
     position: absolute;
     left: 0;
-    font-size: 1.2rem; /* Larger bullet */
+    font-size: 1.3rem; 
 }
 
 /* Achievement styles */
@@ -581,7 +582,7 @@ footer {
 .publication-details {
     margin-bottom: 25px; 
     color: var(--dark-gray);
-    font-size: 1.1rem;     
+    font-size: 1.3rem;     
 }
 
 .publication-abstract {
@@ -605,12 +606,12 @@ footer {
     color: var(--white);
     padding: 6px 12px; 
     border-radius: 20px;
-    font-size: 0.9rem; 
+    font-size: 1.1rem; 
 }
 
 /* Research interests styles */
 .research-interests {
-    margin-top: 70px;  
+    margin-top: 180px;  
 }
 
 .interest-grid {
@@ -652,7 +653,7 @@ footer {
 /* Project styles */
 .project-card {
     background-color: var(--white);
-    border-radius: 10px; 
+    border-radius: 15px; 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
     margin-bottom: 50px; 
     overflow: hidden;
@@ -688,7 +689,7 @@ footer {
 
 .project-date {
     color: var(--dark-gray);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .project-tags {
@@ -703,7 +704,7 @@ footer {
     color: var(--primary-color);
     padding: 6px 12px; 
     border-radius: 20px;
-    font-size: 0.95rem; 
+    font-size: 1rem; 
     font-weight: 500;
 }
 
@@ -717,7 +718,7 @@ footer {
     position: relative;
     padding-left: 20px; 
     list-style-type: none;
-    font-size: 1.1rem; 
+    font-size: 1.28rem; 
 }
 
 .project-description li::before {
@@ -753,12 +754,13 @@ footer {
     color: var(--white);
     padding: 10px 18px; 
     border-radius: 20px;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 /* Media gallery styles */
 .filter-controls {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 18px; 
     margin-bottom: 35px;
@@ -869,6 +871,7 @@ footer {
     .hero-content {
         padding-right: 0;
         margin-top: 50px; 
+        margin-left: 15px; 
     }
 
     .hero-image img {
