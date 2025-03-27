@@ -74,7 +74,7 @@ section {
 
 .section-title {
     text-align: center;
-    margin-bottom: 50px;             
+    margin-bottom: 40px;             
     font-size: 2.5rem; 
     color: var(--primary-color);
     position: relative;
@@ -669,7 +669,8 @@ footer {
 
 .project-image img {
     width: 100%;
-    height: auto;
+    height: 290px;
+    padding: 0 20px 0 20px;
 }
 
 .project-content {
@@ -742,6 +743,7 @@ footer {
     padding: 35px;
     border-radius: 10px; 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); 
+    padding: 0 2.7rem 0 2.7rem;
 }
 
 .skill-pills {
@@ -854,6 +856,14 @@ footer {
     .section-title {
         font-size: 2.5rem;
     }
+
+    .publication-item {
+        padding: 0 3.5rem 0 3.5rem;
+    }
+
+    .project-card {
+        padding: 0 3.5rem 0 3.5rem;
+    }
 }
 
 @media (max-width: 992px) {
@@ -917,6 +927,14 @@ footer {
     
     .section-title {
         font-size: 2.3rem;
+    }
+
+    .publication-item {
+        padding: 0 3.2rem 0 3.2rem;
+    }
+
+    .project-card {
+        padding: 0 3.1rem 0 3.1rem;
     }
 }
 
@@ -1001,6 +1019,14 @@ footer {
     .interest-grid,
     .media-grid {
         grid-template-columns: 1fr;
+    }
+
+    .publication-item {
+        padding: 0 3rem 0 3rem;
+    }
+
+    .project-card {
+        padding: 0 2.8rem 0 2.8rem;
     }
 
     .project-header {
