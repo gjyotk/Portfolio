@@ -22,7 +22,7 @@ body {
     line-height: 1.7; 
     color: var(--black);
     background-color: var(--white);
-    font-size: 18px; 
+    font-size: 17px; 
 }
 
 .container {
@@ -36,7 +36,7 @@ a {
     text-decoration: none;
     color: var(--primary-color);
     transition: var(--transition);
-    font-size: 1.3rem; 
+    font-size: 1.2rem; 
 }
 
 a:hover {
@@ -53,19 +53,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 3.2rem; 
+    font-size: 3.1rem; 
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 h4 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 section {
@@ -75,7 +75,7 @@ section {
 .section-title {
     text-align: center;
     margin-bottom: 50px;             
-    font-size: 3rem; 
+    font-size: 2.5rem; 
     color: var(--primary-color);
     position: relative;
 }
@@ -93,18 +93,19 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+    margin-right: 90px;  
 }
 
 p {
     margin-bottom: 20px;
-    font-size: 1.3rem; 
+    font-size: 1.1rem; 
 }
 
 .btn {
     display: inline-block;
     background-color: var(--primary-color);
     color: var(--white);
-    padding: 14px 35px;                       
+    padding: 15px 33px;                       
     border-radius: 30px;
     text-transform: uppercase;
     font-weight: bold;
@@ -112,7 +113,7 @@ p {
     transition: var(--transition);
     border: 2px solid var(--primary-color);
     cursor: pointer;
-    font-size: 1.1rem; 
+    font-size: 0.9rem; 
 }
 
 .btn:hover {
@@ -125,15 +126,15 @@ p {
     background-color: transparent;
     color: var(--primary-color);
     padding: 10px 25px;                       
-    border-radius: 30px;
+    border-radius: 20px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
     transition: var(--transition);
     border: 2px solid var(--primary-color);
     cursor: pointer;
-    font-size: 1rem; 
-    margin-right: 12px;                      
+    font-size: 0.9rem; 
+    margin-right: 18px;                      
     margin-top: 12px;                      
 }
 
@@ -178,7 +179,7 @@ header .container {
     color: var(--black);
     font-weight: 500;
     position: relative;
-    font-size: 1.2rem;                     
+    font-size: 1.05rem;                     
 }
 
 .nav-links a::after {
@@ -229,8 +230,8 @@ header .container {
 
 .hero-content {
     flex: 1;
-    padding-right: 60px;   
-    margin-left: 80px;     
+    padding-right: 50px;   
+    margin-left: 85px;     
 }
 
 .hero-image {
@@ -239,21 +240,21 @@ header .container {
 }
 
 .hero-image img {
-    border-radius: 50%;
+    border-radius: 60%;
     border: 6px solid var(--primary-color);            
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    max-width: 350px;               
+    max-width: 340px;               
     margin-left: auto;
 }
 
 .hero h1 {
-    font-size: 3.5rem;                
+    font-size: 3.2rem;                
     margin-bottom: 15px;      
     color: var(--primary-color);
 }
 
 .hero .subtitle {
-    font-size: 1.8rem;                    
+    font-size: 1.5rem;                    
     margin-bottom: 25px;      
     color: var(--dark-gray);
 }
@@ -266,13 +267,13 @@ header .container {
     margin-bottom: 12px;      
     display: flex;
     align-items: center;
-    font-size: 1.2rem;     
+    font-size: 1.1rem;     
 }
 
 .contact-info i {
     margin-right: 12px;      
     color: var(--primary-color);
-    font-size: 1.3rem;     
+    font-size: 1.2rem;     
 }
 
 /* Timeline styles */
@@ -334,7 +335,7 @@ header .container {
 .timeline-content h3 {
     margin-top: 0;
     color: var(--primary-color);
-    font-size: 1.8rem;     
+    font-size: 1.6rem;     
 }
 
 .timeline-date {
@@ -367,13 +368,13 @@ header .container {
 .experience-item h3 {
     color: var(--primary-color);
     margin-bottom: 8px;            
-    font-size: 1.8rem;     
+    font-size: 1.6rem;     
 }
 
 .company {
     font-weight: 500;
     margin-bottom: 8px;            
-    font-size: 1.3rem;     
+    font-size: 1.2rem;     
 }
 
 .experience-date {
@@ -392,7 +393,7 @@ header .container {
     position: relative;
     padding-left: 20px;           
     list-style-type: none;
-    font-size: 1.3rem;     
+    font-size: 1.2rem;     
 }
 
 .experience-item li::before {
@@ -400,7 +401,7 @@ header .container {
     color: var(--primary-color);
     position: absolute;
     left: 0;
-    font-size: 1.3rem; 
+    font-size: 1.2rem; 
 }
 
 /* Skills styles */
@@ -419,7 +420,7 @@ header .container {
     margin-bottom: 18px;           
     border-bottom: 3px solid var(--primary-light);          
     padding-bottom: 8px;            
-    font-size: 1.7rem;     
+    font-size: 1.4rem;     
 }
 
 .skill-category ul {
@@ -430,7 +431,7 @@ header .container {
     margin-bottom: 12px;       
     position: relative;
     padding-left: 20px;           
-    font-size: 1.25rem;     
+    font-size: 1.2rem;     
 }
 
 .skill-category li::before {
@@ -438,7 +439,7 @@ header .container {
     color: var(--primary-color);
     position: absolute;
     left: 0;
-    font-size: 1.3rem; 
+    font-size: 1.2rem; 
 }
 
 /* Achievement styles */
@@ -464,14 +465,14 @@ header .container {
 }
 
 .achievement-item i {
-    font-size: 1.8rem;                    
+    font-size: 1.5rem;                    
     color: var(--primary-color);
     margin-right: 18px;           
     margin-top: 6px;            
 }
 
 .achievement-item p {
-    font-size: 1.1rem;     
+    font-size: 1rem;     
 }
 
 /* Social styles */
@@ -500,7 +501,7 @@ header .container {
 }
 
 .social-icon i {
-    font-size: 1.8rem; 
+    font-size: 1.6rem; 
     color: var(--primary-color);
 }
 
@@ -570,28 +571,28 @@ footer {
 .publication-content h2 {
     color: var(--primary-color);
     margin-bottom: 12px;      
-    font-size: 2.2rem;     
+    font-size: 2rem;     
 }
 
 .authors {
     font-style: italic;
     margin-bottom: 12px;
-    font-size: 1.2rem;     
+    font-size: 1.1rem;     
 }
 
 .publication-details {
     margin-bottom: 25px; 
     color: var(--dark-gray);
-    font-size: 1.3rem;     
+    font-size: 1.2rem;     
 }
 
 .publication-abstract {
     margin-bottom: 25px; 
-    font-size: 1.1rem;     
+    font-size: 1rem;     
 }
 
 .publication-abstract h3 {
-    font-size: 1.4rem; 
+    font-size: 1.2rem; 
     margin-bottom: 12px; 
 }
 
@@ -606,7 +607,7 @@ footer {
     color: var(--white);
     padding: 6px 12px; 
     border-radius: 20px;
-    font-size: 1.1rem; 
+    font-size: 1rem; 
 }
 
 /* Research interests styles */
@@ -636,18 +637,18 @@ footer {
 }
 
 .interest-item i {
-    font-size: 3rem; 
+    font-size: 2rem; 
     color: var(--primary-color);
     margin-bottom: 25px;
 }
 
 .interest-item h3 {
     margin-bottom: 18px; 
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 
 .interest-item p {
-    font-size: 1.1rem; 
+    font-size: 1rem; 
 }
 
 /* Project styles */
@@ -815,7 +816,7 @@ footer {
 .media-content h3 {
     color: var(--primary-color);
     margin-bottom: 8px;
-    font-size: 1.7rem; 
+    font-size: 1.5rem; 
 }
 
 .media-date {
@@ -937,7 +938,7 @@ footer {
     }
     
     h3 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .nav-links {
