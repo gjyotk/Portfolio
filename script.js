@@ -15,14 +15,12 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// Resume download button
+//download button
 const resumeBtn = document.getElementById('resume-btn');
 if (resumeBtn) {
     resumeBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        // In a real implementation, this would be the path to your resume file
-        // Since we don't have an actual file, we'll show an alert
-        alert('Resume download would start here. In a real implementation, this would download your resume file.');
+        alert('Resume download would start here');
     });
 }
 
@@ -58,6 +56,77 @@ document.head.appendChild(style);
 // Add event listeners for scroll animations
 window.addEventListener('scroll', checkScroll);
 window.addEventListener('load', checkScroll);
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get carousel elements
+    const track = document.querySelector('.carousel-track');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const prevButton = document.querySelector('.prev-button');
+    const nextButton = document.querySelector('.next-button');
+    const dotsContainer = document.querySelector('.carousel-dots');
+    
+    let currentIndex = 0;
+    const slideCount = slides.length;
+    
+    // Create dot indicators
+    slides.forEach((_, index) => {
+      const dot = document.createElement('div');
+      dot.classList.add('carousel-dot');
+      if (index === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => goToSlide(index));
+      dotsContainer.appendChild(dot);
+    });
+    
+    const dots = document.querySelectorAll('.carousel-dot');
+    
+    // Function to update the carousel position
+    function updateCarousel() {
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+      
+      // Update active dot
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentIndex);
+      });
+    }
+    
+    // Navigate to a specific slide
+    function goToSlide(index) {
+      currentIndex = index;
+      updateCarousel();
+    }
+    
+    // Next slide function
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slideCount;
+      updateCarousel();
+    }
+    
+    // Previous slide function
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+      updateCarousel();
+    }
+    
+    // Event listeners
+    nextButton.addEventListener('click', nextSlide);
+    prevButton.addEventListener('click', prevSlide);
+    
+    // Optional: Auto-advance slides (uncomment to enable)
+    let intervalId = setInterval(nextSlide, 1000);
+    
+    // Pause auto-advance when user interacts with carousel
+    const carousel = document.querySelector('.carousel-container');
+    
+    carousel.addEventListener('mouseenter', () => {
+      clearInterval(intervalId);
+    });
+    
+    carousel.addEventListener('mouseleave', () => {
+      intervalId = setInterval(nextSlide, 5000);
+    });
+    
+  });
 
 // Filter functionality for media page
 const filterBtns = document.querySelectorAll('.filter-btn');
