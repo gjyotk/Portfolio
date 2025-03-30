@@ -38,7 +38,7 @@ function checkScroll() {
     });
 }
 
-// Add CSS for the scroll animation
+// CSS for the scroll animation
 const style = document.createElement('style');
 style.innerHTML = `
     .timeline-item, .experience-item, .skill-category, .achievement-item, .project-card, .publication-item, .media-item {
@@ -59,7 +59,6 @@ window.addEventListener('load', checkScroll);
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Get carousel elements
     const track = document.querySelector('.carousel-track');
     const slides = document.querySelectorAll('.carousel-slide');
     const prevButton = document.querySelector('.prev-button');
@@ -69,7 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentIndex = 0;
     const slideCount = slides.length;
     
-    // Create dot indicators
     slides.forEach((_, index) => {
       const dot = document.createElement('div');
       dot.classList.add('carousel-dot');
@@ -80,42 +78,33 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const dots = document.querySelectorAll('.carousel-dot');
     
-    // Function to update the carousel position
     function updateCarousel() {
       track.style.transform = `translateX(-${currentIndex * 100}%)`;
       
-      // Update active dot
       dots.forEach((dot, index) => {
         dot.classList.toggle('active', index === currentIndex);
       });
     }
     
-    // Navigate to a specific slide
     function goToSlide(index) {
       currentIndex = index;
       updateCarousel();
     }
-    
-    // Next slide function
+
     function nextSlide() {
       currentIndex = (currentIndex + 1) % slideCount;
       updateCarousel();
     }
-    
-    // Previous slide function
+
     function prevSlide() {
       currentIndex = (currentIndex - 1 + slideCount) % slideCount;
       updateCarousel();
     }
     
-    // Event listeners
     nextButton.addEventListener('click', nextSlide);
     prevButton.addEventListener('click', prevSlide);
-    
-    // Optional: Auto-advance slides (uncomment to enable)
-    let intervalId = setInterval(nextSlide, 1000);
-    
-    // Pause auto-advance when user interacts with carousel
+
+    let intervalId = setInterval(nextSlide, 3000);
     const carousel = document.querySelector('.carousel-container');
     
     carousel.addEventListener('mouseenter', () => {
@@ -123,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     carousel.addEventListener('mouseleave', () => {
-      intervalId = setInterval(nextSlide, 5000);
+      intervalId = setInterval(nextSlide, 3000);
     });
     
   });
@@ -135,15 +124,11 @@ const mediaItems = document.querySelectorAll('.media-item');
 if (filterBtns.length > 0) {
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Remove active class from all buttons
             filterBtns.forEach(b => b.classList.remove('active'));
             
-            // Add active class to clicked button
             btn.classList.add('active');
             
             const filter = btn.getAttribute('data-filter');
-            
-            // Show/hide media items based on filter
             mediaItems.forEach(item => {
                 if (filter === 'all' || item.getAttribute('data-category') === filter) {
                     item.style.display = 'block';

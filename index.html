@@ -4,14 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gurjot Kaur - Portfolio</title>
+    <meta property="og:title" content="Gurjot Kaur Portfolio">
+    <meta name="keywords" content="Portfolio, Gurjot Kaur, Research, SEO, Machine learning, Deep Learning">
+    <meta property="og:description" content="Gurjot Kaur - Portfolio">
+    <meta property="og:url" content="https://gurjot-kaur-portfolio.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gurjot Kaur Portfolio">
+    <meta name="twitter:description" content="Gurjot Kaur - Portfoli ">
+    <meta name="author" content="Gurjot Kaur">
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Gurjot Kaur Portfolio",
+          "url": "https://gurjot-kaur-portfolio.vercel.app/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://gurjot-kaur-portfolio.vercel.app/search?query={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+        </script>
+    <!-- pre-load files -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="scripts.js" as="script">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZE065MNKEG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZE065MNKEG');
+</script>
 <body>
     <header>
         <!-- nav-bar -->
         <div class="container">
-            <h1 class="logo">GK</h1>
+            <div class="logo">GK</div>
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">Home</a></li>
@@ -131,6 +166,31 @@
         </div>
     </section>
 
+    <section class="achievements" id="achievements">
+        <div class="container">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="assets/hackathons/IC_Hack_round 1_page-0001.jpg" alt="Image 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="/assets/hackathons/IC_Hack_Round_2_page-0001.jpg" alt="Image 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/image1.jpg" alt="Image 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/image2.jpg" alt="Image 2">
+                        </div>
+                </div> 
+                <button class="carousel-button prev-button">&lt;</button>
+                <button class="carousel-button next-button">&gt;</button>
+                <div class="carousel-dots">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- experience -->
     <section class="experience" id="experience">
         <div class="container">
@@ -184,13 +244,13 @@
         <div class="container">
             <h2 class="section-title">Connect With Me</h2>
             <div class="social-icons">
-                <a href="https://linkedin.com/in/gurjotkaur94/" target="_blank" class="social-icon">
+                <a href="https://linkedin.com/in/gurjotkaur94/" target="_blank" class="social-icon" target="_blank" rel="noopener">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/gjyotk" target="_blank" class="social-icon">
+                <a href="https://github.com/gjyotk" target="_blank" class="social-icon" target="_blank" rel="noopener">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="mailto:jyotk94@gmail.com" class="social-icon">
+                <a href="mailto:jyotk94@gmail.com" class="social-icon" target="_blank" rel="noopener">
                     <i class="far fa-envelope"></i>
                 </a>
             </div>
@@ -200,7 +260,7 @@
     <!-- footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Gurjot Kaur. All Rights Reserved.</p>
+            <p>&copy; 2025 Gurjot Kaur. All Rights Reserved. <a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C Validated</a></p>
         </div>
     </footer>
 
