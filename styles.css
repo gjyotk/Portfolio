@@ -68,13 +68,13 @@ h4 {
 }
 
 section {
-    padding: 70px 0; 
+    padding: 55px 0; 
 }
 
 .section-title {
     text-align: center;
     margin-bottom: 40px;             
-    font-size: 2rem; 
+    font-size: 1.8rem; 
     color: var(--primary-color);
     position: relative;
 }
@@ -88,16 +88,9 @@ section {
     margin: 18px auto 0;           
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-right: 140px;  
-}
-
 p {
-    margin-bottom: 15px;
-    font-size: 0.95rem;              
+    margin-bottom: 12px;
+    font-size: 0.8rem;              
 }
 
 .btn {
@@ -216,6 +209,13 @@ header .container {
 }
 
 /* Hero section styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-right: 160px;  
+}
+
 .hero {
     padding: 180px 0 100px; 
     background-color: var(--light-gray);
@@ -229,7 +229,7 @@ header .container {
 
 .hero-content {
     flex: 1;
-    margin-left: 140px;     
+    margin-left: 150px;     
 }
 
 .hero-image {
@@ -247,13 +247,13 @@ header .container {
 
 .hero h1 {
     font-size: 2.5rem;                    
-    margin-bottom: 15px;      
+    margin-bottom: 5px;      
     color: var(--primary-color);
 }
 
 .hero .subtitle {
     font-size: 1.3rem;                    
-    margin-bottom: 25px;      
+    margin-bottom: 15px;      
     color: var(--dark-gray);
 }
 
@@ -262,7 +262,7 @@ header .container {
 }
 
 .contact-info p {
-    margin-bottom: 12px;      
+    margin-bottom: 5px;      
     display: flex;
     align-items: center;
     font-size: 1rem;        
@@ -296,7 +296,7 @@ header .container {
     padding: 8px 50px; 
     position: relative;
     width: 50%;
-    margin-bottom: 30px;      
+    margin-bottom: 10px;      
 }
 
 .timeline-item:nth-child(odd) {
@@ -548,7 +548,11 @@ footer {
     border-radius: 10px;       
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);             
     overflow: hidden;
-    padding: 0 5.2rem 0 5.2rem;
+    padding: 0 7.5rem 0 7.5rem;
+}
+
+.publications-container {
+    width: 95%; 
 }
 
 .publication-image {
@@ -558,7 +562,7 @@ footer {
 
 .publication-image img {
     width: 100%;
-    height: 100%;
+    height: 95%;
     object-fit: cover;
 }
 
@@ -774,12 +778,12 @@ footer {
     background-color: transparent;
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
-    padding: 10px 25px;
+    padding: 8px 20px;
     border-radius: 30px;
     cursor: pointer;
     font-weight: 500;
     transition: var(--transition);
-    font-size: 0.9rem;                
+    font-size: 0.7rem;                
 }
 
 .filter-btn.active, .filter-btn:hover {
@@ -787,10 +791,30 @@ footer {
     color: var(--white);
 }
 
+.filter-btn2 {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 8px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: var(--transition);
+    font-size: 0.7rem;                
+}
+
+.filter-btn2.active, .filter-btn2:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+
 .media-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
     gap: 35px; 
+    width: 85%;
+    margin: 0 auto;
 }
 
 .media-item {
@@ -799,6 +823,7 @@ footer {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); 
     overflow: hidden;
     transition: var(--transition);
+    height: 25rem;
 }
 
 .media-item:hover {
@@ -808,57 +833,78 @@ footer {
 
 .media-image img {
     width: 100%;
-    height: 340px; 
-    object-fit: cover;
+    height: 260px; 
+    object-fit: contain;
 }
 
 .media-content {
-    padding: 25px; 
+    padding: 15px 20px 8px 20px; 
 }
 
 .media-content h3 {
     color: var(--primary-color);
-    margin-bottom: 8px;
-    font-size: 1.3rem; 
+    margin-bottom: 1px;
+    font-size: 0.9rem; 
 }
 
 .media-date {
     color: var(--dark-gray);
-    font-size: 0.9rem;
-    margin-bottom: 12px; 
+    font-size: 0.7rem;
+    margin-bottom: 1px; 
 }
 
 .media-link {
     display: inline-block;
-    margin-top: 18px; 
+    margin-top: 1px; 
     font-weight: 500;
-    font-size: 0.9rem;                
+    font-size: 0.7rem;                
 }
 
-.carousel-container {
+.media-content p {
+    margin-bottom: 0.5px;
+}
+
+.media-content .btn-outline {
+    padding: 5px 20px;  
+    font-size: 0.6rem;      
+    margin-right: 18px;                      
+    margin-bottom: 8px;      
+    margin-top: 8px; 
+}
+
+.media-item2 {
+    background-color: var(--white);
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); 
+    overflow: hidden;
+    transition: var(--transition);
+    height: 21rem;
+}
+
+.carousel-container1,  .carousel-container2,  .carousel-container3{
     position: relative;
     max-width: 800px;
     margin: 0 auto;
     overflow: hidden;
-  }
-  
-  .carousel-track {
+}
+
+.carousel-track1, .carousel-track2, .carousel-track3{
     display: flex;
     transition: transform 0.3s ease-in-out;
-  }
-  
-  .carousel-slide {
+}
+
+.carousel-slide1, .carousel-slide2, .carousel-slide3 {
     min-width: 100%;
     flex: 1 0 100%;
-  }
-  
-  .carousel-slide img {
+}
+
+.carousel-slide1 img, .carousel-slide2 img, .carousel-slide3 img {
     /* width: 100%; */
     /* height: auto; */
     display: block;
-  }
-  
-  .carousel-button {
+}
+
+.carousel-button1, .carousel-button2, .carousel-button3 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -870,34 +916,36 @@ footer {
     font-size: 0.9rem; 
     border-radius: 50%;
     z-index: 10;
-  }
-  
-  .prev-button {
+}
+
+.prev-button1, .prev-button2, .prev-button3 {
     left: 10px;
-  }
-  
-  .next-button {
+}
+
+.next-button1, .next-button2, .next-button3 {
     right: 10px;
-  }
-  
-  .carousel-dots {
+}
+
+.carousel-dots1, .carousel-dots2, .carousel-dots3 {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .carousel-dot {
-    width: 10px;
-    height: 10px;
+    margin-top: 5px;
+}
+
+.carousel-dot1, .carousel-dot2, .carousel-dot3 {
+    width: 8px;
+    height: 8px;
     background: #ccc;
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
-  }
-  
-  .carousel-dot.active {
+}
+
+.carousel-dot1.active, .carousel-dot2.active, .carousel-dot3.active {
     background: #333;
-  }
+}
+
+
 
 /* responsiveness */
 @media (max-width: 1200px) {
