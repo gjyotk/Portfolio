@@ -32,6 +32,7 @@
     <link rel="preload" href="scripts.js" as="script">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZE065MNKEG"></script>
         <script>
@@ -42,156 +43,132 @@
             gtag('config', 'G-ZE065MNKEG');
         </script>
 </head>
+
 <body>
-    <header>
-        <!-- nav-bar -->
-        <div class="container">
-            <div class="logo">GK</div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="media.html">Activities</a></li>
+
+<header>
+    <div class="container">
+        <div class="logo">GK</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="media.html">Activities</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container hero-flex">
+        
+        <div class="hero-content">
+            <h1>Gurjot Kaur</h1>
+            <p class="subtitle">Undergraduate Researcher | Computational Neuroscience & ML for Healthcare</p>
+
+            <!-- Research Statement -->
+            <p class="research-statement">
+                I am an undergraduate researcher exploring the intersection of computational neuroscience and machine learning for healthcare.
+                I am broadly interested in brain-computer interfaces, neural signal processing, and ML-driven clinical tools.
+            </p>
+
+            <!-- Contact -->
+            <div class="social-icons-top">
+                <a href="https://linkedin.com/in/gurjotkaur94/" target="_blank" class="social-icon-top" target="_blank" rel="noopener">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/gjyotk" target="_blank" class="social-icon-top" target="_blank" rel="noopener">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:jyotk94@gmail.com" class="social-icon-top" target="_blank" rel="noopener">
+                    <i class="far fa-envelope"></i>
+                </a>
+            </div>
+
+            <a href="https://drive.google.com/file/d/1ZLke8I6u3RB9OVZG3W8CRAY_Aw2z7PnZ/view?usp=sharing" 
+                class="btn">Download Resume</a>
+        </div>
+
+        <div class="hero-image large">
+            <img src="/assets/others/me2.jpg" alt="Gurjot Kaur">
+        </div>
+
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="education" id="education">
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-card">
+            <h3>B.E. CSE (AI & ML)</h3>
+            <p class="edu-inst">Chandigarh University</p>
+            <p class="edu-meta">2022 - 2026 | CGPA: 8.30</p>
+
+            <p class="highlight" style="font-size: 0.875rem; margin-left: 1.5rem;">
+                <ul>
+                    <li>Courses: Machine Learning, Deep Learning, Linear Algebra, AI, Data Science</li>
+                    <li>GATE CSE and DA Qualified</li>
                 </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
+                
+            </p>
         </div>
-    </header>
 
-    <!-- heading -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Gurjot Kaur</h1>
-                <p class="subtitle">Machine Learning Enthusiast</p>
-                <div class="contact-info">
-                    <p><i class="far fa-envelope"></i> jyotk94@gmail.com</p>
-                    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/gurjotkaur94/" target="_blank" rel="noopener">LinkedIn</a></p>
-                    <p><i class="fab fa-github"></i> <a href="https://github.com/gjyotk" target="_blank" rel="noopener">Github</a></p>
-                </div>
-                    <a href="https://drive.google.com/file/d/1ULdYxDvv7xBolZBLaEtWZT85EDaOE1dj/view?usp=sharing" class="btn" id="resume-btn">Download Resume</a>
-                </div>
-                    <div class="hero-image">
-                <img src="/assets/others/Gurjot.jpg" alt="Gurjot Kaur">
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 
-    <!-- education -->
-    <section class="education" id="education">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Bachelors in Engineering in CSE (Hons.) in Artificial Intelligence and Machine Learning in association with IBM</h3>
-                        <p>Chandigarh University | CGPA: 8.29</p>
-                        <p class="timeline-date">2022 - 2026</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Intermediate (CBSE)</h3>
-                        <p>Shivalik Public School, Ropar, Punjab</p>
-                        <p>Percentage: 90.80%</p>
-                        <p class="timeline-date">2020 - 2022</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Matriculation (ICSE)</h3>
-                        <p>Holy Family Convent School, Ropar, Punjab</p>
-                        <p>Percentage: 94.80%</p>
-                        <p class="timeline-date">2019 - 2020</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- RECENT UPDATES -->
+<section class="updates">
+    <div class="container">
+        <h2 class="section-title">Recent Work & Updates</h2>
 
-    <!-- skills -->
-    <section class="skills" id="skills">
-        <div class="container">
-            <h2 class="section-title">Technical and Interpersonal Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <ul>
-                        <li>Python (proficient)</li>
-                        <li>Java (advanced)</li>
-                        <li>C++ (intermediate)</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Machine Learning</h3>
-                    <ul>
-                        <li>Matplotlib, Pandas</li>
-                        <li> Numpy, Scikit-learn</li>
-                        <li>Data analysis and Visualisation</li>
-                        <li>Natural Language Processing</li>
-                        <li>Tensorflow, PyTorch</li>
-                        <li>Deep Learning, Large Language Models</li>
-                        <!-- <li>Transformers </li> -->
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Web Development</h3>
-                    <ul>
-                        <li>Javascript</li>
-                        <!-- <li>React</li> -->
-                        <li>MongoDB</li>
-                        <li>MySQL</li>
-                        <li>Pinecone</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Developer Tools</h3>
-                    <ul>
-                        <li>HuggingFace</li>
-                        <li>Github</li>
-                        <li>Docker</li>
-                        <li>Firebase</li>
-                        <li>FastAPI</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+        <div class="updates-grid">
 
-    <!-- experience -->
-    <section class="experience" id="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="experience-items">
-                <div class="experience-item">
-                    <h3>Software Engineering Fellow</h3>
-                    <p class="company">Headstarter | Remote</p>
-                    <p class="experience-date">July 2024 - Sept 2024</p>
-                    <ul>
-                        <li>Developed and deployed AI projects using React JS, FastAPI, Firebase, Vercel, and LLMs following agile methodologies with weekly interview sprints and incorporated CI/CD practices for iterative deployment</li>
-                        <li>Launched Lazzy Koalaa organization, focusing on continuous improvements and scaling AI products for general public use</li>
-                    </ul>
+            <a href="media.html" class="update-card">
+                <div class="update-image">
+                    <img src="assets/others/manga.png" alt="IEEE Paper">
                 </div>
-                <div class="experience-item">
-                    <h3>Joint Secretary</h3>
-                    <p class="company">IEEE Computational Intelligence Society, IEEE CUSB | Onsite</p>
-                    <p class="experience-date">July 2023 - Jan 2024</p>
-                    <ul>
-                        <li>Led university and pan-India technical workshops, engaging 300+ students in facilitating knowledge sharing</li>
-                        <li>Collaboratively organized discussions with 500+ society members and industry professionals. Managed the society's LinkedIn profile, increasing online engagement and visibility</li>
-                    </ul>
+                <div class="update-content">
+                    <span class="update-date">2026</span>
+                    <h3>Paper Published at IEEE Conference</h3>
+                    <p>
+                        Published research work exploring Diffusion and GAN models for Manga image generation.
+                    </p>
                 </div>
-            </div>
+            </a>
+
+            <a href="media.html" class="update-card">
+                <div class="update-image">
+                    <img src="assets/extra-curriculars/iiith1.jpeg" alt="IIIT Hyderabad Internship">
+                </div>
+                <div class="update-content">
+                    <span class="update-date">2025</span>
+                    <h3>Research Intern at IIIT Hyderabad</h3>
+                    <p>
+                        Worked as Software Research Intern at Smart City Living Lab, IIIT Hyderabad
+                    </p>
+                </div>
+            </a>
+
+            <a href="media.html" class="update-card">
+                <div class="update-image">
+                    <img src="assets/extra-curriculars/presentation0.jpeg" alt="AIIMS Mohali">
+                </div>
+                <div class="update-content">
+                    <span class="update-date">2025</span>
+                    <h3>Presentation at AIMS Mohali</h3>
+                    <p>
+                        Gave technical presentation at AIMS Mohali on leveraging Deep Learning for tumor detection.
+                    </p>
+                </div>
+            </a>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- socials -->
     <section class="socials" id="socials">
@@ -211,12 +188,12 @@
         </div>
     </section>
 
-    <!-- footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Gurjot Kaur. All Rights Reserved. <a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C Validated</a></p>
-        </div>
-    </footer>
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Gurjot Kaur. All Rights Reserved.</p>
+    </div>
+</footer>
 
     <script src="script.js"></script>
 </body>

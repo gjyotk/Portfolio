@@ -25,7 +25,7 @@
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="research.html" class="active">Research</a></li>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="experience.html">Experience</a></li>
                     <li><a href="media.html">Activities</a></li>
                 </ul>
                 <div class="hamburger">
@@ -40,86 +40,187 @@
     <!-- heading -->
     <section class="page-header">
         <div class="container">
-            <h1>Research Publications</h1>
-            <p>Exploring the frontiers of machine learning, deep learning and healthcare technology</p>
+            <h1>Exploring the interface of brain, data, and health</h1>
         </div>
     </section>
 
-    <!-- publications -->
-    <section class="publications">
-        <div class="container">
-            <div class="publications-container">
-                <div class="publication-item">
-                    <div class="publication-image">
-                        <img src="/assets/imgs/womens-health.jpg" alt="Women's Health Research" loading="lazy">
-                    </div>
-                    <div class="publication-content">
-                        <h2>Phase-based Women's Health Recommendation and Prediction System</h2>
-                        <p class="authors">Gurjot Kaur, Kushagra Agrawaal, Shweta Agrawaal</p>
-                        <p class="publication-details">To be published in 2025 in the Book Titled: Innovations in Healthcare Technology and Management at Bentham Books</p>
-                        <div class="publication-abstract">
-                            <h3>Summary</h3>
-                            <p>This research explores the development of personalized health recommendation systems for women based on menstrual cycle phases. Leveraging large language models and research-backed insights, the system delivers tailored diet and exercise regimens to optimize women's health outcomes across different menstrual phases. The work addresses a critical gap in personalized healthcare technology specific to women's unique physiological needs.</p>
+<section id="experience">
+    <div class="container">
+        <div class="reveal">
+            <h2 class="section-title">Research <em>Experience</em></h2>
+        </div>
+        <div class="exp-card reveal">
+            <div class="exp-sidebar">
+                <div class="exp-sidebar-top">
+                    <p class="exp-institution">Neuromatch Academy · International</p>
+                    <h3 class="exp-role">Computational Neuroscience Fellow</h3>
+                    <div class="exp-meta">
+                        <div class="exp-meta-row">
+                            <span class="exp-meta-label">Period</span>
+                            <span class="exp-meta-val">June - July 2025</span>
                         </div>
-                        <div class="publication-keywords">
-                            <span>Women's Health</span>
-                            <span>LLMs</span>
-                            <span>RAG</span>
-                            <span>Personalized Healthcare</span>
+                        <div class="exp-meta-row">
+                            <span class="exp-meta-label">Dataset</span>
+                            <span class="exp-meta-val">Miller Stanford (ECoG)</span>
+                        </div>
+                        <div class="exp-meta-row">
+                            <span class="exp-meta-label">Domain</span>
+                            <span class="exp-meta-val">Neural Signal Processing</span>
+                        </div>
+                        <div class="exp-meta-row">
+                            <span class="exp-meta-label">Format</span>
+                            <span class="exp-meta-val">Remote · International cohort</span>
                         </div>
                     </div>
                 </div>
+                <span class="exp-badge">International Fellowship</span>
+            </div>
+ 
+            <div class="exp-body">
+                <h3>Investigating Discriminative Neural Signatures Across Motor Tasks</h3>
+                <p class="exp-tagline">Miller Stanford ECoG dataset · High-gamma power extraction · Single-trial classification</p>
+ 
+                <p>Central question: Whether discriminative neural signatures could reliably separate distinct motor tasks at the level of individual trials.</p>
+ 
+                <p>Methodology: We analysed neural activity across seven Brodmann areas (BA 2, 3, 4, 6, 9, 43, 45) known to be involved in sensorimotor and prefrontal processing. We extracted high-gamma band power features (70-200 Hz) using Welch's spectral estimation method, then applied PCA to reduce dimensionality before attempting single-trial classification.</p>
+ 
+                <div class="exp-findings">
+                    <p class="exp-findings-label">Key finding</p>
+                    <p>High-gamma power in Brodmann areas 4 and 6 (primary and premotor cortex) showed the strongest discriminative signal across motor tasks, consistent with their established roles in movement planning and execution. PCA-based reduction preserved sufficient variance for above-chance single-trial classification, suggesting these spectral features carry task-relevant information even without trial averaging.</p>
+                </div>
+ 
+                <div class="exp-tags">
+                    <span class="exp-tag">ECoG</span>
+                    <span class="exp-tag">Welch's Method</span>
+                    <span class="exp-tag">PCA</span>
+                    <span class="exp-tag">Brodmann Areas</span>
+                </div>
+ 
+                <a href="https://github.com/gjyotk/Neuromatch-Comp-Neuro" class="exp-link" target="_blank" rel="noopener">
+                    <i class="fab fa-github"></i> View project on GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
-            <div class="publication-item">
-                <div class="publication-image">
-                    <img src="/assets/imgs/nn.jpg" alt="Breast Tumor Detection Research" loading="lazy">
+<!-- PUBLICATIONS -->
+<section id="publications">
+    <div class="container">
+        <div class="reveal">
+            <h2 class="section-title">Research <em>Output</em></h2>
+        </div>
+ 
+        <div class="pub-list">
+ 
+            <div class="pub-card reveal">
+                <div class="pub-img">
+                    <img src="/assets/imgs/womens-health.jpg" alt="Women's Health Research" loading="lazy">
                 </div>
-                <div class="publication-content">
-                    <h2>Leveraging Deep Learning for Breast Tumor Diagnosis: A Comparison of CNN Architectures</h2>
-                    <p class="authors">Gurjot Kaur, Vikas Wasson</p>
-                    <p class="publication-details">Currently submitted for review</p>
-                    <div class="publication-abstract">
-                        <h3>Summary</h3>
-                        <p>This comparative study evaluates the efficacy of various Convolutional Neural Network (CNN) architectures including custom CNN, fine-tuned VGG16, and ResNet50 for breast tumor detection using ultrasound images. Working with the BUS-BRA dataset, the research achieved classification accuracies of 85.2%, 91.6%, and 93.4% respectively. The methodology incorporated U-Net for image segmentation and SMOTE for class imbalance mitigation, significantly enhancing model generalizability across a dataset of 1875 annotated ultrasound images.</p>
+                <div class="pub-body">
+                    <span class="pub-status forthcoming"><span class="pub-status-dot"></span>Forthcoming · 2026</span>
+                    <h3>Phase-based Women's Health Recommendation and Prediction System</h3>
+                    <p class="pub-authors">Gurjot Kaur, Kushagra Agrawaal, Shweta Agrawaal</p>
+                    <p class="pub-venue">Innovations in Healthcare Technology and Management · Bentham Books</p>
+ 
+                    <div class="pub-finding">
+                        <p class="pub-finding-label">Core contribution</p>
+                        <p>A RAG-augmented LLM system that classifies menstrual cycle phases and generates personalised diet and exercise plans tailored to each phase's physiological profile, addressing a gap in healthcare technology where generic advice ignores intra-cycle phase variation.</p>
                     </div>
-                    <div class="publication-keywords">
-                        <span>CNN</span>
-                        <span>Healthcare AI</span>
-                        <span>Breast Cancer Detection</span>
-                        <span>Transfer Learning</span>
-                        <span>Deep Learning</span>
+ 
+                    <p class="pub-summary">Developed a FastAPI-based recommendation pipeline that uses large language models with RAG to deliver phase-specific health guidance for women. The system classifies cycle phases from user inputs and retrieves evidence-backed recommendations, improving query resolution efficiency over a baseline generative approach.</p>
+ 
+                    <div class="pub-contribution">
+                        <p class="pub-contribution-label">My contribution</p>
+                        <p>Designed the RAG pipeline, implemented the LLM integration via the Gemini API, built the FastAPI backend, and conducted the evaluation of recommendation quality across cycle phases.</p>
+                    </div>
+ 
+                    <div class="pub-keywords">
+                        <span class="pub-kw">LLMs</span>
+                        <span class="pub-kw">RAG</span>
+                        <span class="pub-kw">Women's Health</span>
+                        <span class="pub-kw">FastAPI</span>
                     </div>
                 </div>
             </div>
-        </div>
 
-            <div class="research-interests">
-                <h2>Research Interests</h2>
-                <div class="interest-grid">
-                    <div class="interest-item">
-                        <i class="fas fa-brain"></i>
-                        <h3>Applied ML in Healthcare</h3>
-                        <p>Developing ML models that address real-world healthcare challenges and improve existing outcomes</p>
+            <div class="pub-card reveal">
+                <div class="pub-img">
+                    <img src="assets/imgs/yume.jpg" alt="Yume" loading="lazy">
+                </div>
+                <div class="pub-body">
+                    <span class="pub-status forthcoming"><span class="pub-status-dot"></span>Published · 2026</span>
+
+                    <h3>Towards Intelligent Manga Generation: Exploring Diffusion Models, GANs, and Deep Learning Approaches</h3>
+
+                    <p class="pub-authors">Sneha, Gurjot Kaur, Madan Lal Saini</p>
+
+                    <p class="pub-venue">2025 2nd International Conference on Recent Trends in Electrical, Electronics and Computing Technologies (ICRTEECT) · Conference Paper</p>
+
+                    <div class="pub-finding">
+                        <p class="pub-finding-label">Core contribution</p>
+                        <p>This work proposes and evaluates a webtoon-style manga generation pipeline that integrates Magi layout with Anime Detailer XL LoRA and multi-modal image generation models to automate narrative and artistic synthesis</p>
                     </div>
-                    <div class="interest-item">
-                        <i class="fas fa-robot"></i>
-                        <h3>Computational Neuroscience</h3>
-                        <p>Exploring applications of Machine Learning for neuroscience domain and implementing techniques for enhanced solution</p>
+ 
+                    <p class="pub-summary">The paper investigates GANs, CNNs, diffusion models, and multi-modal large language models for AI-driven manga and webtoon creation</p>
+ 
+                    <div class="pub-contribution">
+                        <p class="pub-contribution-label">My contribution</p>
+                        <p>Model selection and evaluation for manga and webtoon generation, and contributed substantially to the research design, literature review, and experimental analysis in the paper.</p>
                     </div>
-                    <div class="interest-item">
-                        <i class="fas fa-chart-line"></i>
-                        <h3>Computer Vision</h3>
-                        <p>Advancing image analysis techniques for medical diagnostics and automated detection systems</p>
+ 
+                    <div class="pub-keywords">
+                        <span class="pub-kw">GANs</span>
+                        <span class="pub-kw">Manga generation</span>
+                        <span class="pub-kw">Diffusion Models</span>
                     </div>
+                    <p class="pub-doi">Paper DOI:<a href="https://doi.org/10.1109/icrteect67512.2025.11448686" class="exp-link" target="_blank" rel="noopener noreferrer" style="font-family: 'Instrument Serif'; font-size: 0.88rem;">10.1109/icrteect67512.2025.11448686</a></p>
                 </div>
             </div>
+ 
         </div>
-    </section>
+    </div>
+</section>
+ 
+ 
+<!-- RESEARCH INTERESTS -->
+<section id="interests">
+    <div class="container">
+        <div class="reveal">
+            <h2 class="section-title">What I'm <em>Thinking About</em></h2>
+        </div>
+ 
+        <div class="interests-grid">
+ 
+            <div class="interest-card reveal">
+                <div class="interest-icon"><i class="fas fa-brain"></i></div>
+                <h3>Computational Neuroscience</h3>
+                <p>I'm drawn to the question of how the brain encodes and transforms information — particularly in motor and language-related cortical areas. I want to understand how models of neural activity can be grounded in the biology, not just the statistics.</p>
+            </div>
+ 
+            <div class="interest-card reveal">
+                <div class="interest-icon"><i class="fas fa-heartbeat"></i></div>
+                <h3>ML for Healthcare Diagnostics</h3>
+                <p>Medicine generates data that is messy, imbalanced, and high-stakes, exactly the conditions where thoughtful ML design matters most. I'm interested in how we build models that are not just accurate but interpretable enough to be trusted clinically.</p>
+            </div>
+ 
+            <div class="interest-card reveal">
+                <div class="interest-icon"><i class="fas fa-wave-square"></i></div>
+                <h3>Brain-Computer Interfaces</h3>
+                <p>BCIs sit at the convergence of everything I find compelling: neural signal processing, real-time ML, and direct clinical impact for people with motor disabilities.</p>
+            </div>
+ 
+        </div>
+ 
+    </div>
+</section>
+ 
+ 
 
     <!-- footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Gurjot Kaur. All Rights Reserved. <a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C Validated</a></p>
+            <p>&copy; 2026 Gurjot Kaur. All Rights Reserved.</p>
         </div>
     </footer>
 
