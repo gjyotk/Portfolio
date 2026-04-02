@@ -37,182 +37,217 @@
         </div>
     </header>
 
-    <!-- heading -->
     <section class="page-header">
         <div class="container">
             <h1>Experience & Projects</h1>
         </div>
     </section>
 
-    <!-- projects -->
-    <section class="projects">
-        <div class="container">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="/assets/imgs/bc.png" alt="Breast Cancer Detection">
+    <!--WORK EXPERIENCE -->
+<section id="work">
+    <div class="container">
+        <div class="reveal">
+            <h2 class="section-title">Where I've <em>Worked</em></h2>
+        </div>
+
+        <div class="timeline">
+            <div class="tl-item reveal">
+                <span class="tl-dot"></span>
+                <p class="tl-period">May - Jun 2025</p>
+                <div class="tl-header">
+                    <span class="tl-role">Software Research Intern</span>
+                    <span class="tl-sep">·</span>
+                    <span class="tl-org">Smart City Research Lab, IIIT Hyderabad</span>
+                    <span class="tl-badge">On-site</span>
                 </div>
-                <div class="project-content">
-                    <div class="project-header">
-                        <h2>Breast Cancer Detection</h2>
-                        <span class="project-date">Nov 2024 - Jan 2025</span>
+                <p class="tl-desc">Deployed an AI-powered conversational system at IIITH's Smart City Lab, designing the full pipeline from architectural specification to production. Produced backend API sequence diagrams for ctOP platform and conducted comprehensive QA testing across interface.</p>
+                <div class="tl-tags">
+                    <span class="tl-tag">Conversational AI</span>
+                    <span class="tl-tag">FastAPI</span>
+                    <span class="tl-tag">System Architecture</span>
+                    <span class="tl-tag">API Design</span>
+                </div>
+            </div>
+ 
+            <div class="tl-item reveal">
+                <span class="tl-dot"></span>
+                <p class="tl-period">Jul - Sep 2024</p>
+                <div class="tl-header">
+                    <span class="tl-role">Software Engineering Fellow</span>
+                    <span class="tl-sep">·</span>
+                    <span class="tl-org">Headstarter</span>
+                    <span class="tl-badge">Remote</span>
+                </div>
+                <p class="tl-desc">Built and shipped three LLM-powered applications — a Gemini API chatbot, an AI flashcard generator, and an AI professor rating tool — across a 10-week sprint program, each deployed to Vercel under the Lazzy Koalaa open-source organisation. Also integrated ML-based wishlist management across Instagram, Amazon, and YouTube content streams.</p>
+                <div class="tl-tags">
+                    <span class="tl-tag">LLMs</span>
+                    <span class="tl-tag">Gemini API</span>
+                    <span class="tl-tag">FastAPI</span>
+                    <span class="tl-tag">Firebase</span>
+                    <span class="tl-tag">Vercel</span>
+                </div>
+            </div>
+ 
+        </div>
+    </div>
+</section>
+ 
+
+<!-- APPLIED PROJECTS -->
+<section id="projects">
+    <div class="container">
+        <div class="reveal">
+            <h2 class="section-title">Applied <em>Projects</em></h2>
+        </div>
+        <div class="project-list">
+ 
+            <div class="project-card reveal">
+                <div class="project-img">
+                    <img src="/assets/imgs/bc.png" alt="Breast Cancer Detection" loading="lazy">
+                </div>
+                <div class="project-body">
+                    <h3>Breast Cancer Detection via CNN Architectures</h3>
+ 
+                    <div class="proj-problem">
+                        <p class="block-label">Problem Statement</p>
+                        <p>Does transfer learning meaningfully close the performance gap on a small, class-imbalanced medical imaging dataset?</p>
                     </div>
-                    <div class="project-tags">
-                        <span>CNN architectures</span>
-                        <span>SMOTE</span>
-                        <span>Data segmentation</span>
-                        <span>Deep Learning</span>
+ 
+                    <div class="proj-grid">
+                        <div class="proj-block">
+                            <p class="block-label">Approach</p>
+                            <ul>
+                                <li>Compared custom CNN, fine-tuned VGG16, and ResNet50 on BUS-BRA (1,875 ultrasound images)</li>
+                                <li>U-Net segmentation to isolate tumour regions before classification</li>
+                                <li>SMOTE to address class imbalance; data augmentation for generalisation</li>
+                            </ul>
+                        </div>
+                        <div class="proj-block">
+                            <p class="block-label">My Contribution</p>
+                            <ul>
+                                <li>Designed and ran all three pipelines end-to-end</li>
+                                <li>Implemented the U-Net preprocessing stage independently</li>
+                                <li>Ran statistical comparison and authored the findings</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="project-description">
-                        <ul>
-                            <li>A comperative study of CNN, fine-tuned VGG16 and ResNet50 architectures for breast tumor detection from BUS-BRA dataset of ultrasound images, achieving classification accuracy of 85.2%, 91.6% and 93.4% respectively</li>
-                            <li>Leveraged U-Net for segmentation, SMOTE for class imbalance mitigation and data augmentation techniques, to significantly enhance generalizability of the model on a dataset of 1875 annotated ultrasound images</li>
-                        </ul>
+ 
+                    <div class="proj-outcome">
+                        <p class="block-label">Outcome</p>
+                        <p>ResNet50 achieved 93.4% vs custom CNN's 85.2% confirming that transfer learning compensates effectively for limited data in this domain. Results submitted for peer review.</p>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/gjyotk/Breast-Cancer-Detection" class="btn-outline" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source Code</a>
-                        <!-- <a href="#" class="btn-outline"><i class="fas fa-file-alt"></i> Research Paper</a> -->
+ 
+                    <div class="proj-footer">
+                        <div class="proj-tags">
+                            <span class="proj-tag">PyTorch</span>
+                            <span class="proj-tag">CNN</span>
+                            <span class="proj-tag">ResNet50</span>
+                            <span class="proj-tag">Medical Imaging</span>
+                        </div>
+                        <div class="proj-links">
+                            <a href="https://github.com/gjyotk/Breast-Cancer-Detection" class="proj-link" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="/assets/imgs/whrs.png" alt="Women's Health Recommendation System"loading="lazy">
+ 
+            <div class="project-card reveal">
+                <div class="project-img">
+                    <img src="/assets/imgs/whrs.png" alt="Women's Health Recommendation System" loading="lazy">
                 </div>
-                <div class="project-content">
-                    <div class="project-header">
-                        <h2>Women's Health Recommendation System</h2>
-                        <span class="project-date">Feb 2024 - March 2024</span>
+                <div class="project-body">
+                    <h3>Women's Health Recommendation System</h3>
+ 
+                    <div class="proj-problem">
+                        <p class="block-label">Problem Statement</p>
+                        <p>Generic health recommendation tools ignore intra-cycle hormonal variation, what a woman needs nutritionally and physically in the luteal phase differs significantly from the follicular phase. Can an LLM pipeline produce phase-specific, evidence-backed guidance at query time?</p>
                     </div>
-                    <div class="project-tags">
-                        <span>Gen AI</span>
-                        <span>Research</span>
-                        <span>Python</span>
-                        <span>Web scraping</span>
+ 
+                    <div class="proj-grid">
+                        <div class="proj-block">
+                            <p class="block-label">Approach</p>
+                            <ul>
+                                <li>RAG pipeline for evidence retrieval at inference time</li>
+                                <li>Google Flan-T5 base for initial generation; FastAPI backend</li>
+                                <li>Phase classification from user inputs, mapped to retrieval queries</li>
+                            </ul>
+                        </div>
+                        <div class="proj-block">
+                            <p class="block-label">My Contribution</p>
+                            <ul>
+                                <li>Designed the full RAG architecture and Gemini API integration</li>
+                                <li>Built and deployed the FastAPI backend</li>
+                                <li>Evaluated recommendation quality across all four cycle phases</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="project-description">
-                        <ul>
-                            <li>Developed research-driven solution using Google Flan T5-base LLM and FastAPI to optimize recommendation system delivering personalized diet and exercise plans for menstrual phases</li>
-                            <li>Optimized recommendation system leveraging LLMs, improving women's health outcomes using RAG with Gemini 1.5 Flash for tailored insights for menstrual phases and enhancing query resolution efficiency</li>
-                        </ul>
+ 
+                    <div class="proj-outcome">
+                        <p class="block-label">Outcome</p>
+                        <p>RAG-augmented pipeline outperformed baseline generative approach on query resolution efficiency. Work accepted for publication in <em>Innovations in Healthcare Technology and Management</em>.</p>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/gjyotk/Phase-based-WHRS" class="btn-outline" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source Code</a>
-                        <!-- <a href="#" class="btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a> -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="/assets/imgs/yume.jpg" alt="Yume Weaver AI" loading="lazy">
-                </div>
-                <div class="project-content">
-                    <div class="project-header">
-                        <h2>Yume Weaver AI</h2>
-                        <span class="project-date">Jan 2025 - Present</span>
-                    </div>
-                    <div class="project-tags">
-                        <span>LLMs</span>
-                        <span>GANs</span>
-                        <span>Image-to-Story Generation</span>
-                        <span>AI Art Synthesis</span>
-                    </div>
-                    <div class="project-description">
-                        <ul>
-                            <li>Developing an AI-powered storytelling platform that transforms user-provided plotlines into structured manga/manhwa narratives using LLMs for story generation and GANs for dynamic art synthesis</li>
-                            <li>Designing a modular panel generation pipeline that synthesizes backgrounds, characters, and dialogues separately using fine-tuned GANs and diffusion models, then seamlessly integrates them into coherent story panels</li>
-                        </ul>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Yume-Weaver-AI" class="btn-outline" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source Code</a>
-                        <!-- <a href="#" class="btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a> -->
+ 
+                    <div class="proj-footer">
+                        <div class="proj-tags">
+                            <span class="proj-tag">RAG</span>
+                            <span class="proj-tag">LLMs</span>
+                            <span class="proj-tag">FastAPI</span>
+                            <span class="proj-tag">Flan-T5</span>
+                        </div>
+                        <div class="proj-links">
+                            <a href="https://github.com/gjyotk/Phase-based-WHRS" class="proj-link" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+ 
 
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="/assets/imgs/lazzykoalaaimg.jpg" alt="Lazzy Koalaa" loading="lazy">
+<!-- TECHNICAL SKILLS-->
+<section id="skills">
+    <div class="container">
+        <div class="reveal">
+            <h2 class="section-title">Tools &amp; <em>Technologies</em></h2>
+        </div>
+ 
+        <div class="skills-grid reveal">
+            <div class="skill-group">
+                <p class="skill-group-title">Languages</p>
+                <div class="skill-pills">
+                    <span class="skill-pill">Python</span>
+                    <span class="skill-pill">Java</span>
+                    <span class="skill-pill">JavaScript</span>
+                    <span class="skill-pill">C++</span>
                 </div>
-                <div class="project-content">
-                    <div class="project-header">
-                        <h2>Lazzy Koalaa Organisation</h2>
-                        <span class="project-date">Aug 2024 - Present</span>
-                    </div>
-                    <div class="project-tags">
-                        <span>LLMs</span>
-                        <span>Chatbot</span>
-                        <span>Extension</span>
-                        <span>Web scraping</span>
-                    </div>
-                    <div class="project-description">
-                        <ul>
-                            <li>Developed an innovative Github organization utilizing Machine Learning to streamline wishlist management across platforms like Instagram, Amazon, YouTube; improved content accessibility for users by simplifying navigation</li>
-                            <li>Built three AI based solutions as side products for users: Gemini API based chatbot, AI Flashcard generator and AI Professor rating platform with all products deployed on vercel</li>
-                        </ul>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/lazzykoalaa" class="btn-outline" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source Code</a>
-                        <!-- <a href="#" class="btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a> -->
-                    </div>
+            </div>
+            <div class="skill-group">
+                <p class="skill-group-title">ML &amp; Deep Learning</p>
+                <div class="skill-pills">
+                    <span class="skill-pill">PyTorch</span>
+                    <span class="skill-pill">TensorFlow</span>
+                    <span class="skill-pill">Scikit-learn</span>
+                    <span class="skill-pill">HuggingFace</span>
+                    <span class="skill-pill">NumPy</span>
+                    <span class="skill-pill">Pandas</span>
+                    <span class="skill-pill">LLMs</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <p class="skill-group-title">Dev Tools</p>
+                <div class="skill-pills">
+                    <span class="skill-pill">FastAPI</span>
+                    <span class="skill-pill">Docker</span>
+                    <span class="skill-pill">Git</span>
+                    <span class="skill-pill">Firebase</span>
+                    <span class="skill-pill">Vercel</span>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- skills -->
-    <section class="technical-skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-showcase">
-                <div class="skill-category">
-                    <h3>Programming</h3>
-                    <div class="skill-pills">
-                        <span class="skill-pill">Python</span>
-                        <span class="skill-pill">Java</span>
-                        <span class="skill-pill">C++</span>
-                        <span class="skill-pill">JavaScript</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Machine Learning</h3>
-                    <div class="skill-pills">
-                        <span class="skill-pill">TensorFlow</span>
-                        <span class="skill-pill">PyTorch</span>
-                        <span class="skill-pill">Scikit-learn</span>
-                        <span class="skill-pill">Pandas</span>
-                        <span class="skill-pill">Numpy</span>
-                        <span class="skill-pill">LLMs</span>
-                        <span class="skill-pill">Pinecone</span>
-                        <span class="skill-pill">Transformers</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Web Development</h3>
-                    <div class="skill-pills">
-                        <span class="skill-pill">HTML</span>
-                        <span class="skill-pill">CSS</span>
-                        <span class="skill-pill">JavaScript</span>
-                        <span class="skill-pill">React</span>
-                        <span class="skill-pill">MongoDB</span>
-                        <span class="skill-pill">MySQL</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Technologies</h3>
-                    <div class="skill-pills">
-                        <span class="skill-pill">Git</span>
-                        <span class="skill-pill">Docker</span>
-                        <span class="skill-pill">Firebase</span>
-                        <span class="skill-pill">FastAPI</span>
-                        <span class="skill-pill">HuggingFace</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 
     <!-- footer -->
     <footer>
